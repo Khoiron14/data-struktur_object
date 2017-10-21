@@ -5,7 +5,8 @@ digunakan untuk menyimpan data, tetapi juga informasi untuk mengolah data.
 
 ### Contoh
 ```PHP
-class basic {
+class basic
+{
     var $hello = "Hello Word";
 }
 //membuat object
@@ -16,7 +17,8 @@ echo $pesan->hello;
 
 ### Contoh Lainnya
 ```PHP
-class pick {
+class pick
+{
     var nama;
     var hero;
 }
