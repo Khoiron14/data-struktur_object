@@ -7,7 +7,7 @@ digunakan untuk menyimpan data, tetapi juga informasi untuk mengolah data.
 ```PHP
 class Basic
 {
-    var $hello = "Hello Word";
+    public $hello = "Hello Word";
 }
 //membuat object
 $pesan = new Basic();
@@ -19,8 +19,8 @@ echo $pesan->hello;
 ```PHP
 class Pick
 {
-    var nama;
-    var hero;
+    public nama;
+    public hero;
 }
 //membuat object
 $heroKhoiron = new Pick();
