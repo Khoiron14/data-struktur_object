@@ -5,25 +5,25 @@ digunakan untuk menyimpan data, tetapi juga informasi untuk mengolah data.
 
 ### Contoh
 ```PHP
-class basic
+class Basic
 {
     var $hello = "Hello Word";
 }
 //membuat object
-$pesan = new basic();
+$pesan = new Basic();
 //menampilkan pesan
 echo $pesan->hello;
 ```
 
 ### Contoh Lainnya
 ```PHP
-class pick
+class Pick
 {
     var nama;
     var hero;
 }
 //membuat object
-$heroKhoiron = new pick();
+$heroKhoiron = new Pick();
 
 //set property
 $heroKhoiron->nama="Vheriv3";
@@ -32,8 +32,8 @@ $heroKhoiron->hero="Venomancer";
 //menampilkan
 echo $heroKhoiron->nama." Memilih Hero ".$heroKhoiron->hero;
 ```
-- Saya membuat class pick(), kemudian membuat variable nama dan hero didalamnya.
-- Membuat objek baru dari class pick(), bernama '$heroKhoiron'.
+- Saya membuat class Pick(), kemudian membuat variable nama dan hero didalamnya.
+- Membuat objek baru dari class Pick(), bernama '$heroKhoiron'.
 - Kemudian menampilkan hasilnya.
 
 Kode diatas akan menampilkan "Vheriv3 Memilih Hero Venomancer".
@@ -43,7 +43,7 @@ Kode diatas akan menampilkan "Vheriv3 Memilih Hero Venomancer".
 #### Konversi Array ke Object
 
 ```PHP
-function array_to_object($array)
+function arrayToObject($array)
 {
     if (is_array($array)) {
         return (object) array_map(__FUNCTION__, $array);
@@ -52,17 +52,17 @@ function array_to_object($array)
     }
 }
 
-$test = array(
+$test = [
     'A' => 'Test A',
     'B' => 'Test B',
-    'C' => array(
+    'C' => [
         'CA' => 'Test CA',
-        'CB' => array(
+        'CB' => [
             'CBA' => 'Test CBA'
-        )
-    ),
+        ]
+    ],
     'D' => 'Test D'
-);
+];
 
 $object_test = array_to_object($test);
 
