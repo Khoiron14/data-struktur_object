@@ -64,7 +64,7 @@ $test = [
     'D' => 'Test D'
 ];
 
-$object_test = array_to_object($test);
+$object_test = arrayToObject($test);
 
 // Pemanggilan...
 echo $object_test->A; // Hasil => `Test A`
@@ -75,7 +75,7 @@ echo $object_test->C->CB->CBA; // Hasil => `Test CBA`
 #### Konversi Object ke Array
 
 ```PHP
-function object_to_array($object)
+function objectToArray($object)
 {
     if (is_object($object)) {
         $object = get_object_vars($object);
@@ -96,7 +96,7 @@ $test->C->CB = new stdClass;
 $test->C->CB->CBA = 'Test CBA';
 $test->D = 'Test D';
 
-$array_test = object_to_array($test);
+$array_test = objectToArray($test);
 
 // Pemanggilan
 echo $array_test['A']; // Hasil => `Test A`
